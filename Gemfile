@@ -21,6 +21,7 @@ gem 'faraday'
 gem 'basscss-rails'
 gem 'omniauth-oauth2'
 gem 'omniauth-spotify'
+gem 'haml'
 
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
