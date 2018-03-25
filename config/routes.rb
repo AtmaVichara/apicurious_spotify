@@ -4,6 +4,6 @@ Rails.application.routes.draw do
 
   get '/auth/spotify', to: "sessions#create", as: "login"
 
-
+  resources :dashboard, only: [:index]
 
 end
