@@ -14,8 +14,8 @@ SimpleCov.start
 VCR.configure do |config|
   config.cassette_library_dir = "spec/fixtures/cassettes"
   config.hook_into :webmock
-  config.filter_sensitive_data('<github_key>') {ENV["GITHUB_KEY"]} # edit with whatever sensitive env variable needed
-  config.filter_sensitive_data('<github_token>') {ENV["ACCESS_TOKEN"]} # edit with whatever sensitive env variable needed
+  config.filter_sensitive_data('<github_key>') {ENV["SPOTIFY_CLIENT"]}
+  config.filter_sensitive_data('<github_token>') {ENV["ACCESS_TOKEN"]}
 end
 # Requires supporting ruby files with custom matchers and macros, etc, in
 # spec/support/ and its subdirectories. Files matching `spec/**/*_spec.rb` are
@@ -39,6 +39,7 @@ ActiveRecord::Migration.maintain_test_schema!
 RSpec.configure do |config|
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
+  config.include OmniauthHelper
 
   # If you're not using ActiveRecord, or you'd prefer not to run each of your
   # examples within a transaction, remove the following line or assign false
