@@ -19,8 +19,9 @@ gem 'uglifier', '>= 1.3.0'
 gem 'figaro'
 gem 'faraday'
 gem 'basscss-rails'
-gem 'omniauth-oauth2'
-gem 'omniauth-spotify'
+# gem "omniauth"
+# gem 'omniauth-oauth2'
+# gem 'omniauth-spotify-oauth2', '~> 1.0'
 gem 'haml'
 
 # See https://github.com/rails/execjs#readme for more supported runtimes
